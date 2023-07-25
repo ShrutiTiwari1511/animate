@@ -1,0 +1,179 @@
+body{
+    background: repeating-linear-gradient(90deg,#00031d 0%,#00031d 2%,#000536 2%);
+    margin:0;
+    padding:0;
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+svg{
+    position:absolute;
+    z-index:-1;
+   
+}
+.navbar {
+    background-color: transparent;
+    color:white;
+  }
+.navbar img{
+    height:auto;
+    width:50px;
+    margin-left:50px;
+}
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    position:fixed;
+    right:0;
+    padding-right:80px;
+    
+  }
+ 
+  .navbar-nav li.nav-item a{
+    color:rgba(255, 255, 255, 0.633);
+    font-weight: 100;
+    margin:2px;
+    
+  }
+  .navbar-nav li.nav-item a:hover{
+    color:white;
+    text-decoration: none;
+  }
+  .navbar-collapse{
+    justify-content: flex-end;
+  }
+  @media(max-width:750px){
+    .navbar-nav {
+      position:fixed;
+     right:0;
+     left:auto;
+     background-color: white;
+     color: black;
+     width:250px;
+     height:100vh;
+     text-align:center;
+    
+    }
+  
+   .navbar-nav .nav-item .nav-link {
+     color: black;
+   }
+   .navbar-nav .nav-item .nav-link:hover{
+     font-weight: 500;
+     color:black;
+     text-decoration: none;
+  }
+  
+ }
+
+  .main-content{
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .content-container {
+    text-align: left;
+    color:white;
+   
+  }
+  .content-container h1{
+    font-weight: bolder;
+  }
+  @media(min-width:750px) {
+    .main-content{
+      padding-top: 150px;
+     
+    }
+    .content-container{
+      padding-top: 50px;
+    }
+    .image-container img{
+      height:400px;
+    }
+    
+  }
+
+  .image-container{
+    padding: 50px;
+    text-align: center;
+  }
+  .image-container img{
+    height:250px;
+  }
+  .main-content .btn{
+    background-color:#1adb80;
+    border: 1px solid #1adb80;
+    width:200px;
+    height:50px;
+    color:black;   
+  }
+  .main-content .btn:hover{
+    background-color: #1adb80;
+    color:black;
+  }
+ .waves{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:115px;
+    overflow:hidden;
+ }
+ .wave1{
+    background-image: url(wave-top.png);
+ }
+ .wave2{
+    background-image: url(wave-mid.png);
+ }
+ .wave3{
+    background-image: url(wave-bot.png);
+ }
+ .wave1, .wave2, .wave3{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+   
+ }
+ @keyframes flow1 {
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0;
+    }
+}
+.wave1{
+    animation:flow1 4s linear infinite;
+    opacity:0.6;
+   
+}
+ @keyframes flow2{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+ }
+
+ .wave2{
+    animation:flow2 6s linear infinite;
+    opacity:0.8;
+    
+ }
+ .wave3{
+    z-index:1;
+ }
+ .animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.second-animation {
+  animation-delay: 1s;
+}
+.third-animation{
+  animation-delay: 1.5s;
+}
+.fourth-animation{
+  animation-delay:2.5s;
+}
